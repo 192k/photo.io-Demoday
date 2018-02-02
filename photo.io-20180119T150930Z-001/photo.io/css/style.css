@@ -1,0 +1,400 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 1.5;
+  height: 100%;
+  position: relative;
+  background-color: #f2f2f2;
+}
+
+p {
+  margin-bottom: 1.5em;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+#header {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  opacity: 1;
+  top: 0;
+}
+#header .navbar {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+#header #navbar .navbar-right {
+  margin-right: 0;
+}
+@media screen and (max-width: 992px) {
+  #header #navbar .navbar-right {
+    margin-right: -15px;
+  }
+}
+#header #navbar li a {
+  font-family: "Open Sans", sans-serif;
+  /* cor da letra na barra de menu */
+  color: #ffffff;
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+}
+#header #navbar li a:hover {
+  color: #c6ba00;
+}
+#header #navbar li.call-to-action a {
+  border: 2px solid #c6ba00;
+  padding: 5px 10px 3px 10px;
+  margin: 12px 0 0 0px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px;
+}
+#header #navbar li.call-to-action a:hover {
+  background-color: #c6ba00;
+  color: #fff;
+}
+#header #navbar li.call-to-action a span:before {
+  background-color: transparent;
+}
+#header .navbar-brand {
+  float: left;
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  padding-left: 0;
+  /* cor do "photo" */
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+#header .navbar-brand > span {
+  /* cor do "io" */
+  color: #c6ba00;
+}
+@media screen and (max-width: 992px) {
+  #header .navbar-brand {
+    padding-left: 10px !important;
+    padding-right: 0 !important;
+  }
+}
+#header .navbar-default {
+  border: transparent;
+  /* cor da barra de menu */
+  background: #232323;
+  margin: 0;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  -ms-border-radius: 0px;
+  border-radius: 0px;
+}
+@media screen and (max-width: 768px) {
+  #header .navbar-default {
+    margin-top: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+}
+
+#home {
+  background-color: transparent;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+  background-color: #9fa3a5;
+  color: #fff;
+}
+#home, #home .text-wrap {
+  height: 700px;
+}
+#home .text-wrap {
+  display: table;
+  width: 100%;
+  position: relative;
+  z-index: 4;
+}
+#home .text-inner {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+#home .text-inner h1 {
+  font-size: 38px;
+  text-transform: uppercase;
+  color: white;
+  margin: 0 0 20px 0;
+  font-weight: 700;
+}
+
+/* DESENVOLVIMENTO DO RODAPÉ */
+ #footer .copyright {
+    font-size: 14px;
+    list-style: none;
+    padding-left: 0;  
+    padding-bottom: 1.5em;
+    padding-top: 1.5em;
+  }
+    #footer .copyright li {
+      border-left: solid 1px #19191a;
+      /* COR DA LETRA */
+      color: #19191a;
+      display: inline-block;
+      line-height: 1;
+      margin-left: 1em;
+      padding-left: 1em;
+    }
+      #footer .copyright li:first-child {
+        border-left: 0;
+        margin-left: 0;
+        padding-left: 0;
+      }
+
+  @media screen and (max-width: 480px) {
+
+    #footer .copyright li {
+      display: block;
+      border-left: 0;
+      margin-left: 0;
+      padding-left: 0;
+      line-height: inherit;
+    }
+
+  }
+
+/* texto no banner */
+
+.col {
+  padding-top: 50px;
+  text-align: justify;
+  width: 45%;
+}
+/* tamanho da foto no banner */
+.col img {
+  width: 500px;
+}
+
+/* desenvolvimento da parte categoria */
+.category h1 {
+  font-size: 30px;
+  color: #000;
+  text-align: center;
+  padding-top: 1.8em;
+}
+
+/* barrinha de separação */
+#box{
+  border-bottom: 5px solid #c6ba00;
+  margin: 0em 25em 0em 25em;
+}
+
+/* row-two: agrupamento de todas as divs com a categoria */
+.row-two {
+  margin: 1.8em 5em 1.8em 5em;
+}
+
+.col-md-4 {
+  box-shadow: solid #000;
+  margin-bottom: 0px;
+  padding-bottom: 30px;
+}
+.col-md-4 img {
+  width: 100%;
+}
+.col-md-4 h2 {
+  text-decoration: bold;
+  font-size: 20px;
+  text-align: center;
+  padding-top: 0.5em;
+  /* espaço entre as duas linhas do nome e a função dos desenvolvedores */
+  margin-bottom: 0.5em;
+}
+
+.about h1 {
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+}
+.about h3 {
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.about p {
+  margin: 1.8em 10em 1.8em 10em; 
+}
+
+.dev img {
+  border-radius: 100%;
+}
+.dev p {
+  font-size: 16px;
+  text-align: center;
+}
+
+.align-items {
+  /* deixando como comentário porque a palavra "cadastra-se" estava indo ao lado das fotos
+  como se não estivesse verificando o espaço que foi colocado
+  com a intenção de diminuir as fotos */
+  /* margin-right: 12em;
+  margin-left: 12em; */
+}
+
+.text-place {
+  padding: 50px;
+  color: black;
+  margin-top: 10px;
+}
+
+form h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+/*
+.form-group {
+  width: 90%;
+  max-width: 600px;
+  margin: 2em auto;
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+ /*ORGANIZAR TUDO ISSO*/
+.cd-form {
+  width: 90%;
+  max-width: 600px;
+  margin: 4em auto;
+}
+
+.cd-form fieldset {
+  margin: 24px 0;
+}
+.cd-form div {
+  position: relative;
+  margin: 20px 0;
+}
+.cd-form h4, .cd-form .cd-label {
+  font-size: 1.8rem;
+  color: #000000;
+  margin-bottom: 10px;
+}
+.cd-form .cd-label {
+  display: block;
+}
+.cd-form input, .cd-form textarea, .cd-form select, .cd-form label {
+  font-size: 1.6rem;
+  color: #2b3e51;
+}
+.cd-form input[type="text"],
+.cd-form input[type="email"],
+.cd-form textarea,
+.cd-form select,
+.cd-form legend {
+  display: block;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.cd-form input[type="text"],
+.cd-form input[type="email"],
+.cd-form textarea,
+.cd-form select {
+  /* general style for input elements */
+  padding: 12px;
+  border: 1px solid #c6ba00;
+  background-color: #ffffff;
+  border-radius: .25em;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+.cd-form input[type="text"]:focus,
+.cd-form input[type="email"]:focus,
+.cd-form textarea:focus,
+.cd-form select:focus {
+  outline: none;
+  border-color: #c6ba00;
+  box-shadow: 0 0 5px rgba(44, 151, 222, 0.2);
+}
+
+.cd-form select {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+}
+.cd-form select::-ms-expand {
+  display: none;
+}
+.cd-form .cd-form-list {
+  margin-top: 16px;
+}
+.cd-form .cd-form-list::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.cd-form .cd-form-list li {
+  /* wrapper for radio and checkbox input types */
+  display: inline-block;
+  position: relative;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin: 0 26px 16px 0;
+  float: left;
+}
+
+.cd-form input[type="submit"] {
+  /* button style */
+  border: none;
+  background:#c6ba00;
+  border-radius: .25em;
+  padding: 16px 20px;
+  color: #ffffff;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+}
+.no-touch .cd-form input[type="submit"]:hover {
+  background: #42a2e1;
+}
+.cd-form input[type="submit"]:focus {
+  outline: none;
+  background: #2b3e51;
+}
+
+.cd-form textarea {
+  min-height: 200px;
+  resize: vertical;
+  overflow: auto;
+} */
